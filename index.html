@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>12th Science Result</h1>
+            <hr>
+            <form>
+                <label>Enter Your Full Name : </label>
+                <br>
+                <input type="text" id="nameValue"/>
+                <hr>
+
+                <label>Enter Your Seat Number : </label>
+                <br>
+                <input type="text" id="seat_numberValue"/>
+                <hr>
+                
+                <label>01 ENGLISH</label>
+                <br>
+                <input type="number" id="english"/> <br>
+                <hr>
+
+                <label>02 MARATHI</label>
+                <br>
+                <input type="number" id="marathi"/> <br>
+                <hr>
+                
+                <label>40 MATHEMATICS & STATISTICS</label>
+                <br>
+                <input type="number" id="math"/> 
+                <hr>
+                <label>54 PHYSICS</label>
+                <br>
+                <input type="number" id="physics"/> 
+                <hr>
+                <label>55 CHEMISTRY</label>
+                <br>
+                <input type="number" id="chemistry"/> 
+                <hr>
+                <label>56 BIOLOGY</label>
+                <br>
+                <input type="number" id="biology"/> 
+                <hr>
+                <label>31 ENVIRONMENT EDUCATION</label>
+                <br>
+                <input type="number" id="env_edu"/> 
+                <hr>
+                <button onclick="return result()">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container">
+        <div class="profile">
+            <h2>Name : <span id="name"></span></h2>
+            <h2>Seat Number : <span id="seat_number"></span></h2>
+        </div>
+        <div class="result">
+            <table>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Max Marks</th>
+                    <th>Marks Obtained</th>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>ENGLISH</td>
+                    <td>100</td>
+                    <td id="eng_marks"></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>MARATHI</td>
+                    <td>100</td>
+                    <td id="marathi_marks"></td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>MATHEMATICS & STATISTICS</td>
+                    <td>100</td>
+                    <td id="math_marks"></td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>PHYSICS</td>
+                    <td>100</td>
+                    <td id="physics_marks"></td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>CHEMISTRY</td>
+                    <td>100</td>
+                    <td id="chemistry_marks"></td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>BIOLOGY</td>
+                    <td>100</td>
+                    <td id="biology_marks"></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>ENVIRONMENT EDUCATION</td>
+                    <td>50</td>
+                    <td id="env_edu_marks"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>650</td>
+                    <td id="totalSum"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="result">Result</td>
+                    <td colspan="2" id="percentage">Percentage %</td>
+                </tr>
+                
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>
